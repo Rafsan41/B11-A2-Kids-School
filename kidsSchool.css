@@ -1,0 +1,7 @@
+.nav-main {
+  border: 1px solid red;
+}
+@media screen and (width: 570px) {
+}
+@media (min-width: 570px) and (max-width: 999px) {
+}
