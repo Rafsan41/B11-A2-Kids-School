@@ -1,7 +1,286 @@
+.section {
+  border: 1px solid rgb(252, 219, 219);
+}
+/* navbar */
 .nav-main {
-  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-@media screen and (width: 570px) {
+.navpages ul {
+  list-style: none;
+  display: flex;
 }
-@media (min-width: 570px) and (max-width: 999px) {
+.navlogotitle {
+  display: flex;
+  align-items: center;
+}
+.pages {
+  list-style: none;
+  padding: 20px 30px;
+}
+/* bannersection */
+.bnr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px;
+  margin: 10px 30px;
+}
+.bnrTextContent {
+  font-size: 20px;
+  padding: 20px 20px;
+  margin: 10px 20px;
+}
+
+/* card section  */
+.cardGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 30px;
+}
+.card {
+  margin: 10px 30px;
+}
+.cardbtn {
+  display: flex;
+  justify-content: center;
+}
+.cardbtn button {
+  padding: 5px 17px;
+  margin: 10px;
+  border: none;
+  font-weight: 900;
+  font-size: xx-large;
+  color: azure;
+  background-color: rgba(254, 163, 1, 1);
+  border-radius: 30px;
+}
+.standard {
+  display: flex;
+  justify-content: center;
+}
+
+.singlecard {
+  width: 370px;
+  height: 480px;
+  border: 1px solid rgba(222, 245, 255, 1);
+  border-radius: 18px;
+  background: linear-gradient(
+    to bottom,
+    rgba(222, 245, 255, 1),
+    white,
+    white,
+    white
+  );
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.singlecardimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  padding-top: 30px;
+  margin: 20px 5px;
+}
+.singlecardimg img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.singlecardtxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.singlecardtxt p:nth-child(1) {
+  font-size: 25px;
+}
+.singlecardtxt p:nth-child(2) {
+  font-size: 15px;
+  text-align: center;
+}
+.singlecardtxt p:nth-child(3) {
+  font-size: 17px;
+  color: rgba(100, 200, 255, 1);
+}
+.singlecard2 > .singlecardtxt p:nth-child(3) {
+  font-size: 17px;
+  color: rgba(240, 170, 0, 1);
+}
+.singlecard3 > .singlecardtxt p:nth-child(3) {
+  font-size: 17px;
+  color: rgba(135, 0, 255, 1);
+}
+.singlecard2 {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 244, 220, 1);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 244, 220, 1),
+    white,
+    white,
+    white
+  );
+}
+.singlecard3 {
+  border-radius: 18px;
+  border: 1px solid rgba(242, 232, 255, 1);
+  background: linear-gradient(
+    to bottom,
+    rgba(238, 225, 255, 1),
+    white,
+    white,
+    white
+  );
+}
+/* story section  */
+.section3 {
+  background: linear-gradient(to bottom, white, white, rgb(243, 227, 191));
+}
+.storygroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.storybtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.datebtn button {
+  padding: 10px 20px;
+  margin-left: 40px;
+  position: relative;
+  top: -27px;
+  border: none;
+  color: azure;
+  font-size: large;
+  border-radius: 20px;
+  background-color: rgba(60, 216, 232, 1);
+}
+
+.singleStory {
+  width: 540px;
+  height: 580px;
+  margin: 20px 30px;
+  background: white;
+  border-radius: 18px;
+}
+.singleStory img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.bigstorytxt {
+  padding: 5px 30px;
+}
+.bigstorytxt p:nth-child(1) {
+  font-weight: 700;
+  font-size: larger;
+}
+.gridStoryGroup {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 2fr);
+}
+/* footer section  */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 270px) and (max-width: 768px) {
+  /* nav section  */
+  .nav-main {
+    width: 100%;
+    border-bottom: 2px solid rgba(254, 163, 1, 1);
+  }
+
+  .navtitle {
+    display: none;
+  }
+  .navpages ul {
+    display: none;
+    visibility: hidden;
+  }
+  .navbtn {
+    display: none;
+  }
+  .drawers {
+    border: 2px solid rgb(5, 5, 5);
+    margin-bottom: 4px;
+    width: 20px;
+    border-radius: 5px;
+  }
+
+  /* bannersection */
+  .bnr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .bnrTextContent {
+    font-size: 20px;
+    padding: 20px 20px;
+    margin: 10px 20px;
+  }
+  .bannerimg img {
+    width: 340px;
+    height: 420px;
+  }
+
+  /* card section  */
+  .cardGroup {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px;
+  }
+  .cardbtn {
+    display: none;
+  }
+
+  /* story section  */
+  .bigStory {
+    display: none;
+  }
+
+  /* footer section  */
+  .footer {
+    display: block;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  /* nav section  */
+  .nav-main {
+  }
+  .navlogotitle {
+    display: flex;
+    align-items: center;
+  }
+  .navpages ul {
+    display: none;
+    visibility: hidden;
+  }
+  .navbtn {
+  }
+  .drawers {
+    border: 2px solid rgb(5, 5, 5);
+    margin-bottom: 4px;
+    width: 20px;
+    border-radius: 5px;
+  }
+  /* bannersection */
+
+  /* card section  */
+
+  /* story section  */
+
+  /* footer section  */
 }
