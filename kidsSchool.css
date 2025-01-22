@@ -1,6 +1,21 @@
-.section {
-  border: 1px solid rgb(252, 219, 219);
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
+body {
+  font-family: "Quicksand", serif;
+}
+
+.section {
+  background-image: url(./assets/bg.png);
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+
 /* navbar */
 .nav-main {
   display: flex;
@@ -10,10 +25,34 @@
 .navpages ul {
   list-style: none;
   display: flex;
+  font-weight: 700;
+}
+.navpages ul > li:nth-child(1) {
+  color: #fea301;
+}
+.navpages ul > li:nth-child(2) {
+  color: #01acfd;
+}
+.navpages ul > li:nth-child(3) {
+  color: rgba(5, 212, 223, 1);
+}
+.navpages ul > li:nth-child(4) {
+  color: rgba(93, 88, 239, 1);
+}
+.navbtn input {
+  padding: 10px 20px;
+  border: none;
+  background-color: #fea301;
+  border-radius: 8px;
+  color: azure;
+  font-weight: 600;
+  font-size: medium;
 }
 .navlogotitle {
   display: flex;
   align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 .pages {
   list-style: none;
@@ -24,13 +63,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 40px;
+  padding: 20px 40px;
   margin: 10px 30px;
 }
 .bnrTextContent {
   font-size: 20px;
   padding: 20px 20px;
   margin: 10px 20px;
+  text-align: left;
+}
+.bnrBigTxt {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.empowering {
+  color: #fea301;
+}
+.towards {
+  color: #01acfd;
+}
+.bnrTxtBtn input {
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+  color: azure;
+  border-radius: 8px;
+  background-color: black;
+}
+.bannerimg img {
+  width: 100%;
 }
 
 /* card section  */
@@ -38,10 +99,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 30px;
+  justify-content: center;
+  margin: 20px 40px;
 }
 .card {
-  margin: 10px 30px;
+  padding: 10px;
+  margin: 10px 10px;
 }
 .cardbtn {
   display: flex;
@@ -82,8 +145,8 @@
   justify-content: center;
   align-items: center;
   padding: 5px 5px;
-  padding-top: 30px;
-  margin: 20px 5px;
+  padding-top: 7%;
+  margin: 10px 5px;
 }
 .singlecardimg img {
   display: flex;
@@ -140,7 +203,13 @@
 }
 /* story section  */
 .section3 {
-  background: linear-gradient(to bottom, white, white, rgb(243, 227, 191));
+  background: url(./assets/bg.png),
+    linear-gradient(to bottom, white, rgb(243, 227, 191));
+  background-position: center;
+  background-size: cover;
+}
+.ourstories {
+  text-align: center;
 }
 .storygroup {
   display: flex;
@@ -151,6 +220,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.storybtn button {
+  padding: 10px 20px;
+  margin: 40px 20px;
+  font-size: medium;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: azure;
 }
 
 .datebtn button {
@@ -177,7 +256,8 @@
   border-top-right-radius: 16px;
 }
 .bigstorytxt {
-  padding: 5px 30px;
+  margin: 15px 5px;
+  padding: 10px 30px;
 }
 .bigstorytxt p:nth-child(1) {
   font-weight: 700;
@@ -188,12 +268,79 @@
   gap: 20px;
   grid-template-columns: repeat(2, 2fr);
 }
+.gridstory {
+  background: white;
+  border-radius: 16px;
+}
+
+.gridstory img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.gridstory button {
+  padding: 5px 10px;
+  margin-left: 40px;
+  position: relative;
+  top: -22px;
+  border: none;
+  color: azure;
+  font-size: large;
+  border-radius: 20px;
+  background-color: rgba(149, 178, 38, 1);
+}
+.gridstroy2 button {
+  background-color: rgba(93, 88, 240, 1);
+}
+.gridstory > div p:nth-child(1) {
+  padding: 1px 20px;
+}
 /* footer section  */
 .footer {
   display: flex;
   justify-content: space-evenly;
+  align-items: top;
+  justify-items: top;
+  padding: 5%;
+  color: azure;
+  background: rgba(1, 172, 253, 1);
+}
+.footerlogo {
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footerlogotittle {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.footerlogotxt {
+  width: 500px;
+}
+.aboutschool p {
+  font-weight: 600;
+  font-size: medium;
+}
+.aboutschool li {
+  text-align: left;
+  padding: 5px 1px;
 }
 
+.aboutschool li {
+  list-style: none;
+}
+.footersociallogo {
+  display: flex;
+  justify-content: left;
+}
+.footertouch {
+  font-weight: 600;
+  font-size: medium;
+}
+.footersociallogo > div img {
+  padding: 2px;
+}
 @media (min-width: 270px) and (max-width: 768px) {
   /* nav section  */
   .nav-main {
@@ -206,7 +353,6 @@
   }
   .navpages ul {
     display: none;
-    visibility: hidden;
   }
   .navbtn {
     display: none;
@@ -224,30 +370,56 @@
     justify-content: center;
     flex-direction: column-reverse;
   }
+
   .bnrTextContent {
-    font-size: 20px;
-    padding: 20px 20px;
-    margin: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+  }
+  .bnrBigTxt {
+    font-weight: 600;
+    font-size: 4rem;
   }
   .bannerimg img {
-    width: 340px;
-    height: 420px;
+    width: 100%;
+    height: 100%;
   }
 
   /* card section  */
+
+  .card {
+    padding-bottom: 5%;
+  }
   .cardGroup {
     display: block;
     justify-content: center;
     align-items: center;
-    margin: 10px 30px;
+    margin: 10px 20px;
   }
   .cardbtn {
     display: none;
+  }
+  .singlecard {
+    width: 100%;
+    height: 100%;
   }
 
   /* story section  */
   .bigStory {
     display: none;
+  }
+  .gridStoryGroup {
+    width: 100%;
+    margin: 10px;
+  }
+  .gridstory {
+    width: 100%;
+    height: 100%;
+  }
+  .gridstory button {
+    font-size: medium;
+    margin-left: 20px;
   }
 
   /* footer section  */
